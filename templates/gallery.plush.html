@@ -1,0 +1,91 @@
+<a name="theater"><h3 class="mt-3">Home Theaters &amp; HD TV</h3></a>
+<p>We help you bring tomorrow's technology to your home today. Integrate your computer or MP3 player into your whole house audio system. Install an HDTV under a kitchen counter or at the foot of your bed, or even your whirlpool tub. Sit the whole family with friends down in your personal home theater and watch a movie as never before. View some of our work below.</p>
+
+<div class="row text-center text-lg-left gallery">
+  <%= for (i, img) in theater { %>
+  <div class="col-lg-3 col-md-4 col-6">
+    <a href="#th<%=i%>Modal" class="d-block mb-4 h-100" data-toggle="modal" data-target="#th<%=i%>Modal">
+      <img class="img-fluid img-thumbnail" src="<%= assetPath(img) %>" alt="">
+    </a>
+  </div>
+  <div class="modal fade" id="th<%=i%>Modal" tabindex="-1" role="dialog" aria-labelledby="View Image" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mt-3 mx-auto d-block" src="<%= assetPath(img) %>" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>
+
+<a name="pre"><h3>New Construction Pre-wire</h3></a>
+<p>Future proof your new home. We provide new construction structured wiring that will integrate your entire home. In addition to the distributed audio and video systems, we will make your house ready for high-speed internet, a phone system, or even security cameras for both inside and outside the house. Whole house automation is no longer a thing of the future.</p>
+
+<div class="row text-center text-lg-left gallery">
+  <%= for (i, img) in prewire { %>
+  <div class="col-lg-3 col-md-4 col-6 my-auto">
+    <a href="#pre<%=i%>Modal" class="d-block mb-4 h-100" data-toggle="modal" data-target="#pre<%=i%>Modal">
+      <img class="img-fluid img-thumbnail" src="<%= assetPath(img) %>" alt="">
+    </a>
+  </div>
+  <div class="modal fade" id="pre<%=i%>Modal" tabindex="-1" role="dialog" aria-labelledby="View Image" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mt-3 mx-auto d-block" src="<%= assetPath(img) %>" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>
+
+
+
+<a name="commercial"><h3>Commercial</h3></a>
+<p>Want your company board room to utilize today's technology? Are you thinking of adding a new training facility or maybe just background music for your customers and employees? Is the audio system in your church not what you'd hoped. We offer several solutions to fit your needs?</p>
+
+<div class="row text-center text-lg-left gallery">
+  <%= for (i, img) in commercial { %>
+  <div class="col-lg-3 col-md-4 col-6 my-auto">
+    <a href="#cm<%=i%>Modal" class="d-block mb-4 h-100" data-toggle="modal" data-target="#cm<%=i%>Modal">
+      <img class="img-fluid img-thumbnail" src="<%= assetPath(img) %>" alt="">
+    </a>
+  </div>
+  <div class="modal fade" id="cm<%=i%>Modal" tabindex="-1" role="dialog" aria-labelledby="View Image" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid mt-3 mx-auto d-block" src="<%= assetPath(img) %>" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>

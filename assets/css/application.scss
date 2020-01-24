@@ -1,0 +1,25 @@
+$custom-primary: #e38138; /* orange */
+$custom-secondary: #efefef; /* black */
+
+$theme-colors: (
+	/* Custom Color Styles */
+	"primary": $custom-primary,
+	"custom-primary": $custom-primary,
+	"custom-secondary": $custom-secondary,
+);
+
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+@import "buffalo";
+
+nav {
+	#brand {
+		color: $custom-primary;
+	}
+}
+
+.gallery {
+	img {max-height:300px;}
+}
